@@ -110,6 +110,16 @@ body {
   background-size: 50px 50px;
   pointer-events: none;
   z-index: -1;
+  animation: moveGrid 10s linear infinite;
+}
+
+@keyframes moveGrid {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100px 100px; /* Moves diagonally */
+  }
 }
 
 .grid-background::before {
